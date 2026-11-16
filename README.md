@@ -54,10 +54,8 @@
 
 ## 🚀 실행 및 배포 링크
 
-- **Netlify 배포 URL**: 
-- **GitHub Pages 배포 URL**: 
-
-*(배포 완료 후 해당 링크를 기입합니다.)*
+- **Netlify 배포 URL**: https://otpki.netlify.app
+- **GitHub Pages 배포 URL**: https://gaeun-ik.github.io/26-w11-mobile-otp/
 
 ---
 
