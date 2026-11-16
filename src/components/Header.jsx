@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { ShieldCheck, Clock, Lock, Radio } from 'lucide-react';
+import { ShieldCheck, Clock, Lock } from 'lucide-react';
 
 export default function Header() {
-  const [currentTime, setCurrentTime] = useState(new Date());
+  const [currentTime, setCurrentTime] = useState(() => new Date());
 
   useEffect(() => {
     const timer = setInterval(() => {

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ShieldCheck, Network, Cpu, Lock, CheckCircle2, ExternalLink, HelpCircle } from 'lucide-react';
+import { ShieldCheck, Network, Cpu, Lock, CheckCircle2 } from 'lucide-react';
 
 export default function SecurityAuditor() {
   const [activeTab, setActiveTab] = useState('principles'); // 'principles' | 'checklist'

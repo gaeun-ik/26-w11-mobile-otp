@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ShieldCheck, ShieldAlert, CheckCircle, XCircle, ArrowRight, History, Zap, Settings2 } from 'lucide-react';
+import { ShieldCheck, CheckCircle, XCircle, ArrowRight, History, Zap } from 'lucide-react';
 import { verifyTotp, generateTotp } from '../utils/totp.js';
 
 export default function OtpVerifier({ secret }) {

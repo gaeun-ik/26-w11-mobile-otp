@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Radio, Copy, Check, Sparkles, Smartphone, CheckCircle2 } from 'lucide-react';
+import { Radio, Copy, Check, Smartphone, CheckCircle2 } from 'lucide-react';
 import { generateTotp, getRemainingSeconds, getRemainingProgressPercent } from '../utils/totp.js';
 
 export default function LiveOtpMonitor({ secret }) {
@@ -12,8 +12,6 @@ export default function LiveOtpMonitor({ secret }) {
 
   // 실시간 OTP 생성 및 정밀 타이머 동기화 루프
   useEffect(() => {
-    let animId;
-
     const updateOtpAndTimer = async () => {
       const now = Date.now();
       const currentStep = Math.floor(now / 1000 / 30);
@@ -46,7 +44,6 @@ export default function LiveOtpMonitor({ secret }) {
 
     return () => {
       clearInterval(interval);
-      if (animId) cancelAnimationFrame(animId);
     };
   }, [secret]);
 
